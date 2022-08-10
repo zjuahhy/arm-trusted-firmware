@@ -23,9 +23,7 @@
 /* Table of regions to map using the MMU.  */
 const mmap_region_t plat_mmap[] = {
 	MAP_SEC_SYSRAM,
-	MAP_GIC,
-	MAP_DEVICE0,
-	MAP_DEVICE1,
+	MAP_DEVICE,
 	{ 0 }
 };
 
