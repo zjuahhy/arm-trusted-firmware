@@ -45,6 +45,8 @@ ifeq ($(TRUSTED_BOARD_BOOT),1)
 BL31_CPPFLAGS		+=	-DMTK_EFUSE_FIELD_NORMAL
 endif
 
+include $(APSOC_COMMON)/fsek/fsek.mk
+
 include $(APSOC_COMMON)/bl31/memdump.mk
 ifeq ($(EMERG_MEM_DUMP),1)
 BL31_SOURCES		+=	$(MTK_PLAT_SOC)/drivers/pll/pll.c
